@@ -37,6 +37,7 @@
 </head>
 
 <body class="  font-roboto">
+    <div id="header-container"></div>
 
     <main>
         <section>
@@ -643,7 +644,13 @@
             });
         });
     </script>
-
+    <script>
+        fetch('./header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
 </body>
 
 </html>

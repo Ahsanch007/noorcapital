@@ -37,6 +37,8 @@
 </head>
 
 <body class="  font-roboto">
+    <!-- Embed header here -->
+    <div id="header-container"></div>
     <main>
         <section id="about-banner">
             <div class="w-full bg-cover bg-center" style="background-image: url('./assets/img/bg-banner-about.png');">
@@ -1006,7 +1008,13 @@
             }
         });
     </script>
-
+    <script>
+        fetch('./header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
 
 </body>
 

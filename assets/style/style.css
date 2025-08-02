@@ -43,6 +43,7 @@ select option:hover {
     background-color: white !important;
 }
 
+
 .card-border:before {
     content: "";
     position: absolute;
