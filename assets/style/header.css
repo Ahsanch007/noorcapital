@@ -2223,6 +2223,13 @@ a {
 }
 
 
+#navSm {
+    right: -100%;
+}
+
+#navSm.open {
+    right: 0;
+}
 
 @media screen and (max-width:1545px) {
     .top-myNoor {
